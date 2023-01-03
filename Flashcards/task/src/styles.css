@@ -1,0 +1,64 @@
+body {
+    /*background-image: url("world.png");*/
+    /*background-size: 100vw 100vh;*/
+    background: url("world.png") top left / 100vw 100vh;
+}
+
+.flex-container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    /*justify-content: space-around;*/
+}
+
+#question {
+    align-content: center;
+    font: bold 10px Century Gothic, sans-serif;
+    color: #1668e3;
+}
+
+#countries {
+    display: flex;
+    flex-flow: row wrap;
+    width: 40vw;
+    align-items: center;
+    padding-top: 50px;
+    transition: 1s linear;
+    /*padding-left: 200px;*/
+    /*padding-right: 200px;*/
+}
+
+.country-container {
+    /*align-items: center;*/
+    display: flex;
+    border-radius: 1vw;
+    width: 148px;
+    height: 148px;
+    margin: 6px;
+    background: rgba(98, 255, 119, 0.72);
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: 1s linear;
+}
+
+.country-container:hover {
+    transform: rotateY(180deg);
+    background: #99ce0f;
+}
+
+.country, .capital {
+    /*padding-left: 25px;*/
+    position: absolute;
+    align-self: center;
+    font: bold 20px Century Gothic, sans-serif;
+    color: #1668e3;
+    backface-visibility: hidden;
+    /*position: absolute;*/
+}
+
+.capital {
+    transform: rotateY(180deg);
+    /*backface-visibility: hidden;*/
+}
